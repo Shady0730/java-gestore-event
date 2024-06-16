@@ -81,7 +81,10 @@ public class Evento {
     public String disdici(int nDisdette) {
         if (numeroPostiPrenotati == 0) {
             return "Non ci sono prenotazioni da disdire.";
-        } else if(numeroPostiPrenotati < nDisdette) {
+        } else if (nDisdette < 0 ){
+        	return "Il numero di disdette non può essere negativo";
+        }
+        else if(numeroPostiPrenotati < nDisdette) {
         	return "Il numero delle disdette non può essere maggiore dei posti prenotati";
         } 
         else {
