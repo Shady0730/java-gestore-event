@@ -20,7 +20,7 @@ public class Evento {
         } catch (DateTimeParseException e) {
             throw new IllegalArgumentException("Formato data non valido. Utilizzare 'dd/MM/yyyy HH:mm:ss'.");
         }
-
+        //verifica dell'inserimento corretto del numero di posti
         if (this.data.isBefore(LocalDateTime.now())) {
             throw new IllegalArgumentException("La data dell'evento non può essere nel passato.");
         }

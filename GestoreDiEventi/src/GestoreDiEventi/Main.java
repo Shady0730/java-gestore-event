@@ -24,7 +24,8 @@ public class Main {
             System.out.print("Inserisci il prezzo del biglietto: ");
             double prezzo = scanner.nextDouble();
             scanner.nextLine(); 
-
+            
+            //creazione concerto con i dati inseriti dall'utente
             Concerto concerto = new Concerto (titolo, data,numeroPostiTotali, ora , prezzo);
             System.out.println("Concerto creato: " + concerto);
 
